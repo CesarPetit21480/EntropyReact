@@ -1,40 +1,25 @@
 import React from "react";
-
+import "./Login.scss";
 
 const imgRoutes = require.context("../../assets/logo", true);
 const Login = () => {
-
-    const lg = "./logo.png"
+  const lg = "./logo.png";
   return (
-    <div className="container row mt-5">
-
-        <div className="col-10">
-
+    <div className="container-fluid principal">
+      <div className="carga d-flex flex-col-reverse">
         <img
-          className="card-img-top"
+          className="card-img-top logo"
           src={imgRoutes(`${lg}`)}
           alt="remera"
         />
-               
-
-        </div>
-
-        <div className="col-2">
-                <form action="">
-                    <label htmlFor="user">Usuario</label>
-                    <input type="text" />
-                    <label htmlFor="password">Password</label>
-                    <input type="password" />
-                    <input type="button" value="INGRESAR" />
-                </form>
-        </div>
-       
-
-
-
-
-   
-      
+        <form action="" >
+          <label htmlFor="user">Usuario</label>
+          <input type="text" />
+          <label htmlFor="password">Password</label>
+          <input type="password" />
+          <input type="button" value="INGRESAR" />
+        </form>
+      </div>
     </div>
   );
 };

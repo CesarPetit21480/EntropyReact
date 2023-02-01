@@ -1,6 +1,5 @@
 import React from "react";
-import Login from "../Login/Login";
-import { Navigate, redirect } from "react-router-dom";
+import { Navigate} from "react-router-dom";
 
 const Home = () => {
   const shouldRedirect = true;
