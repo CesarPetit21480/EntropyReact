@@ -5,21 +5,21 @@ const imgRoutes = require.context("../../assets/logo", true);
 const Login = () => {
   const lg = "./logo.png";
   return (
-    <div className="container-fluid principal">
-      <div className="carga d-flex flex-col-reverse">
+    <div className="principal">
+      <div className='derecha'>
         <img
           className="card-img-top logo"
           src={imgRoutes(`${lg}`)}
           alt="remera"
         />
-        <form action="" >
+        {/* <form action="">
           <label htmlFor="user">Usuario</label>
           <input type="text" />
           <label htmlFor="password">Password</label>
           <input type="password" />
           <input type="button" value="INGRESAR" />
-        </form>
-      </div>
+        </form> */}
+      </div>  
     </div>
   );
 };
