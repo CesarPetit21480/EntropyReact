@@ -39,8 +39,8 @@ const Login = () => {
                   src={imgRoutes(`${lg}`)}
                   alt="remera"
                 />
-                <h1>ENTROPY PROGRAMACION</h1>
-                <h2>by Vasco</h2>
+                <h3>ENTROPY PROGRAMACION</h3>
+               
               </span>
             </div>
             <div className="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
