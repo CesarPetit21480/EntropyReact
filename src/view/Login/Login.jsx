@@ -1,61 +1,44 @@
 import React from "react";
 import "./Login.scss";
+import "./animacion.scss";
 
 const imgRoutes = require.context("../../assets/logo", true);
 const Login = () => {
   const lg = "./logo.png";
-  // return (
-  //   <div classNameName="container-fluid principal">
-  //     <div classNameName="row">
-  //       <div classNameName="pe-5 derecha">
-  //         <img
-  //           classNameName="card-img-top logo d-flex justify-content-center"
-  //           src={imgRoutes(`${lg}`)}
-  //           alt="remera"
-  //         />
-  //         <form action="">
-  //           <label htmlFor="user">Usuario</label>
-  //           <input type="text" />
-  //           <label htmlFor="password">Password</label>
-  //           <input type="password" />
-
-  //           <div classNameName="d-flex justify-content-center pb-4 pt-4">
-  //             <input type="button" value="INGRESAR" />
-  //           </div>
-  //         </form>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
   return (
     <section className="vh-100">
-      <div className="container-fluid">
+      <div className="container-fluid ">
         <div className="row">
-          <div class="col-sm-6 text-black">
-            <div class="px-5 ms-xl-4">
+          <div className="col-sm-12 text-black">
+            <div className="px-5 ms-xl-4">
               <span>
+                <div className="d-flex justify-content-center align-items-center">
                 <img
-                  className="me-3 pt-5 mt-xl-4 logoTam"
+                  className="logoTam"
                   src={imgRoutes(`${lg}`)}
                   alt="remera"
                 />
-                <h3>ENTROPY PROGRAMACION</h3>
+
+                </div>
                
+                {/* <h3>ENTROPY</h3> */}
+
+                <div>
+                  <h1 className="t-stroke t-shadow-halftone">ENTROPY</h1>
+                </div>
               </span>
             </div>
-            <div className="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
-              <form style={{width: "23rem"}}>
-                <h3 className="fw-normal mb-3 pb-3" style={{"letter-spacing": "1px"}}>
-                 Ingreso
-                </h3>
+            <div className="d-flex justify-content-center align-items-center px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+              <form style={{ width: "23rem" }}>
+                <h3 className="fw-normal mb-3 pb-3">Ingreso</h3>
 
                 <div className="form-outline mb-4">
                   <input
                     type="email"
                     id="form2Example18"
-                    class="form-control form-control-lg"
+                    className="form-control form-control-lg"
                   />
-                  <label className="form-label" for="form2Example18">
+                  <label className="form-label" htmlFor="form2Example18">
                     Email address
                   </label>
                 </div>
@@ -64,15 +47,18 @@ const Login = () => {
                   <input
                     type="password"
                     id="form2Example28"
-                    class="form-control form-control-lg"
+                    className="form-control form-control-lg"
                   />
-                  <label className="form-label" for="form2Example28">
+                  <label className="form-label" htmlFor="form2Example28">
                     Password
                   </label>
                 </div>
 
-                <div class="pt-1 mb-4">
-                  <button className="btn btn-info btn-lg btn-block" type="button">
+                <div className="pt-1 mb-4">
+                  <button
+                    className="btn btn-info btn-lg btn-block"
+                    type="button"
+                  >
                     Login
                   </button>
                 </div>
@@ -84,7 +70,7 @@ const Login = () => {
                 </p>
                 <p>
                   Don't have an account?{" "}
-                  <a href="#!" class="link-info">
+                  <a href="#!" className="link-info">
                     Register here
                   </a>
                 </p>

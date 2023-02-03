@@ -1,40 +1,47 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .principal {
-    background-image: url("../../assets/image/principal.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 2px solid #CCC;
-    padding: 1em;
+  background-image: url("../../assets/image/principal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #ccc;
+  padding: 1em;
 }
 
 .logoTam {
-    width: 180px;
-    height: 200px;
+  width: 180px;
+  height: 200px;
+  position: relative;
+  top: 3rem;
 }
 
 .derecha {
-    border: solid 2px whitesmoke;
-    background-color: rgb(60, 38, 184);
-    opacity: 0.5;
-    margin: 0px;
+  border: solid 2px whitesmoke;
+  background-color: rgb(60, 38, 184);
+  opacity: 0.5;
+  margin: 0px;
 }
 
 .bg-image-vertical {
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 100%;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
 }
 
 @media (min-width: 1025px) {
-    .h-custom-2 {
-        height: 100%;
-    }
+  .h-custom-2 {
+    height: 100%;
+  }
 }
+h3 {
+  letter-spacing: 1px;
+}
+
+
