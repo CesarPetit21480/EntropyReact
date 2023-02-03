@@ -6,10 +6,13 @@ const imgRoutes = require.context("../../assets/logo", true);
 const Login = () => {
   const lg = "./logo.png";
   return (
-    <section className="vh-100">
+    <section className="vh-100 principal">
       <div className="container-fluid ">
         <div className="row">
-          <div className="col-sm-12 text-black">
+        <div className="col-sm-4 text-black"></div>
+          <div className="col-sm-4 text-black recuadro">
+            
+            
             <div className="px-5 ms-xl-4">
               <span>
                 <div className="d-flex justify-content-center align-items-center">
@@ -18,13 +21,10 @@ const Login = () => {
                   src={imgRoutes(`${lg}`)}
                   alt="remera"
                 />
-
-                </div>
-               
-                {/* <h3>ENTROPY</h3> */}
-
-                <div>
-                  <h1 className="t-stroke t-shadow-halftone">ENTROPY</h1>
+                </div>   
+                <div className="d-flex justify-content-center align-items-center">
+                  {/* <h1 className="t-stroke t-shadow-halftone">ENTROPY</h1> */}
+                  <h1>ENTROPY</h1>
                 </div>
               </span>
             </div>
@@ -77,6 +77,9 @@ const Login = () => {
               </form>
             </div>
           </div>
+        
+        
+          <div className="col-sm-4 text-black"></div>
         </div>
       </div>
     </section>
