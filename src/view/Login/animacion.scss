@@ -1,9 +1,9 @@
-.bg{
+.bg {
     background: linear-gradient(to right, rgb(255, 110, 127), rgb(191, 233, 255));
     z-index: 2;
     background-size: cover;
     transition: all 0.5s ease;
-  }
+}
 
 .t-stroke {
     color: transparent;
@@ -11,8 +11,7 @@
     -webkit-text-stroke-width: 2px;
     -moz-text-stroke-color: #000000;
     -webkit-text-stroke-color: #ffffff;
- }
-
+}
 
 .t-shadow-halftone {
     position: relative;
@@ -22,8 +21,7 @@
     content: "Entropy";
     font-size: 5rem;
     letter-spacing: 0px;
-    background: url('../../assets/image/principal.jpg') 50% 47%
-      repeat;
+    background: url('../../assets/logo/principal.jpg') 50% 47% repeat;
     background-size: 150%;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
@@ -38,4 +36,4 @@
     top: 6px;
     z-index: -1;
     transition: all 0.5s ease;
- }
+}
