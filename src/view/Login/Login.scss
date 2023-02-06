@@ -11,6 +11,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 1000px;
+    width: 100%;
 }
 
 .logoTam {
@@ -19,6 +20,8 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -5rem;
+    ;
 }
 
 logImage {
@@ -61,18 +64,24 @@ h3 {
 
 .log {
     width: 25rem;
-    height: 30rem;
-    border: solid 1px white;
+    height: 40rem;
+    border: solid 4px white;
+    border-radius: 2px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 15%;
-    background-image: radial-gradient(circle, #76767d, #757b81, #768081, #7c8480, #858781);
-    background-image: linear-gradient(to right bottom, #e52c2e, #f56563, #fd9496, #fec1c4, #f7edee);
+    box-shadow: 3px 3px 3px 2px rgb(202, 199, 198);
+    top: 5%;
+    // background-image: radial-gradient(circle, #76767d, #757b81, #768081, #7c8480, #858781);
+    // background-image: linear-gradient(to right bottom, #e52c2e, #f56563, #fd9496, #fec1c4, #f7edee);
+    background-image: url("../../assets/image/loginNuevo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: .90;
     border-radius: 3px;
     font-family: 'Mochiy Pop One', sans-serif;
-    padding-bottom: 5rem;
+    color: whitesmoke;
 }
 
 .inpt {
@@ -86,4 +95,10 @@ h3 {
     top: -3rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
+}
+
+.fondoLogo {
+    background-image: radial-gradient(circle, #76767d, #757b81, #768081, #7c8480, #858781);
+    width: 50%;
 }

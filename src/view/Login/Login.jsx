@@ -15,41 +15,40 @@ const Login = () => {
         <div>
           <form>
             <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Email address</label>
+              <label className="ms-5" htmlFor="exampleInputEmail1">Email address</label>
               <input
                 type="email"
-                className="form-control inpt"
+                className="form-control inpt mt-3"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Enter email"
               />
-              <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
-              </small>
             </div>
-            <div className="form-group">
-              <label htmlFor="exampleInputPassword1">Password</label>
+            <div className="form-group mt-3">
+              <label className="ms-5" htmlFor="exampleInputPassword1">Password</label>
               <input
                 type="password"
-                className="form-control inpt"
+                className="form-control inpt mt-3"
                 id="exampleInputPassword1"
                 placeholder="Password"
               />
             </div>
-            <div className="form-check">
+            <div className="form-check mt-3">
               <input
                 type="checkbox"
-                className="form-check-input"
+                className="form-check-input ms-4"
                 id="exampleCheck1"
               />
-              <label className="form-check-label" htmlFor="exampleCheck1">
-                Check me out
-              </label>
+              <div className="mb-3">
+                <label className="form-check-label ms-2" htmlFor="exampleCheck1">
+                  Recordar password
+                </label>
+              </div>
             </div>
 
-            <div class=" row d-flex justify-content-center align-content-center inpt ">
-              <button type="submit" className="btn btn-dark ">
-                Submit
+            <div class="row d-flex justify-content-center align-content-center inpt ">
+              <button type="submit" className="btn btn-dark">
+                Ingresar
               </button>
             </div>
           </form>
