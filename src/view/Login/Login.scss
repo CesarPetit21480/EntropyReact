@@ -1,106 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 
 .principal {
-  background-image: url("../../assets/image/316707.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; 
-  width: 100%;
-  height: 100vh;
- 
-}
-.logoTam {
-  width: 180px;
-  height: 200px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -5rem;
-}
-
-.logImage {
-  object-fit: cover;
-  object-position: left;
-}
-
-.bg-image-vertical {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: auto 100%;
-}
-
-@media (min-width: 1025px) {
-  .h-custom-2 {
-    height: 100%;
-  }
-}
-h3 {
-  letter-spacing: 1px;
-}
-
-.log {
-  width: 25rem;
-  height: auto;
-  border: solid 4px white;
-  border-radius: 2px;  
-  box-shadow: 3px 3px 3px 2px rgb(202, 199, 198); 
-  background-image: url("../../assets/image/kettbell.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  border-radius: 3px;
-  font-family: "Mochiy Pop One", sans-serif;
-  color: whitesmoke;
-  
-  
-
-}
-
-.inpt {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.positionTitulo {
-  position: relative;
-  top: -3rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-}
-
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .principal {
     background-image: url("../../assets/image/316707.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
-    width: 100%;    
-  }
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
-  .log {
-    width: 15rem;
-    height: 30rem;
-    border: solid 4px white;
-    border-radius: 2px;
+.logoTam {
+    width: 180px;
+    height: 200px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -2rem;
+}
+
+.logImage {
+    object-fit: cover;
+    object-position: left;
+}
+
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+}
+
+h3 {
+    letter-spacing: 1px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    // width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.log {
+    width: 25rem;
+    height: auto;
+    border: solid 4px white;
+    border-radius: 2px;
     box-shadow: 3px 3px 3px 2px rgb(202, 199, 198);
-    top: 5%;
-    // background-image: radial-gradient(circle, #76767d, #757b81, #768081, #7c8480, #858781);
-    // background-image: linear-gradient(to right bottom, #e52c2e, #f56563, #fd9496, #fec1c4, #f7edee);
     background-image: url("../../assets/image/kettbell.jpeg");
     background-size: cover;
     background-position: center;
@@ -109,22 +62,137 @@ h3 {
     border-radius: 3px;
     font-family: "Mochiy Pop One", sans-serif;
     color: whitesmoke;
-  }
+    padding-bottom: 1rem;
+}
 
-  .logoTam {
-    width: 100px;
-    height: 100px;
-    position: relative;
+.inpt {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -2rem;
-  }
+}
 
-  .positionTitulo {
+.positionTitulo {
     position: relative;
-    top: -2rem;
+    top: -3rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-  }
+}
+
+.ubicacionForm {
+    position: relative;
+    margin-top: -2rem;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .principal {
+        background-image: url("../../assets/image/316707.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: none;
+    }
+    .log {
+        width: 300px;
+        height: auto;
+        border: solid 4px white;
+        border-radius: 2px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 3px 3px 3px 2px rgb(202, 199, 198);
+        top: 5%;
+        background-image: url("../../assets/image/kettbell.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+        border-radius: 3px;
+        font-family: "Mochiy Pop One", sans-serif;
+        color: whitesmoke;
+    }
+    .logoTam {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    .positionTitulo {
+        position: relative;
+        top: -2rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    .ubicacionForm {
+        position: relative;
+        margin-top: 2rem;
+    }
+}
+
+
+/*vista tablet */
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    .principal {
+        background-image: url("../../assets/image/316707.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: none;
+    }
+    .log {
+        width: 25rem;
+        height: 35rem;
+        border: solid 4px white;
+        border-radius: 2px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 3px 3px 3px 2px rgb(202, 199, 198);
+        top: 5%;
+        background-image: url("../../assets/image/kettbell.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+        border-radius: 3px;
+        font-family: "Mochiy Pop One", sans-serif;
+        color: whitesmoke;
+        padding-bottom: 1rem;
+    }
+    .logoTam {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    .positionTitulo {
+        position: relative;
+        top: -2rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+    .ubicacionForm {
+        position: relative;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    .principal {
+        height: 130vh;
+        width: 100vw;
+    }
+    .ubicacionForm {
+        position: relative;
+        margin-top: -1rem;
+    }
 }

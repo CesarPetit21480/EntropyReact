@@ -5,14 +5,18 @@ const Login = () => {
   const lg = "./logo.png";
   // const princi = "./principal.jpg";
   return (
-    <div className="principal container-fluid">    
+    <div className="principal container-fluid">
+      <div className="contenedor">
         <div className="log">
-          <img className="logoTam" src={imgRoutes(`${lg}`)} alt="logo" />
-          <div className="positionTitulo">
-            <h2>ENTROPY</h2>
+          <div className="d-flex flex-column justify-content-center">
+            <img className="logoTam" src={imgRoutes(`${lg}`)} alt="logo" />
+            <h2 className="positionTitulo">ENTROPY</h2>
           </div>
+          {/* <div className="positionTitulo">
+            <h2>ENTROPY</h2>
+          </div> */}
 
-          <div>
+          <div className="ubicacionForm">
             <form>
               <div className="form-group">
                 <label className="ms-5" htmlFor="exampleInputEmail1">
@@ -53,15 +57,15 @@ const Login = () => {
                 </div>
               </div>
 
-              <div class="row d-flex justify-content-center align-content-center inpt">
-                <button type="submit" className="btn btn-dark">
+              <div className="row d-flex justify-content-center align-content-center inpt">
+                <button type="submit" className="btn btn-dark my-2">
                   INGRESAR
                 </button>
               </div>
             </form>
           </div>
         </div>
-      
+      </div>
     </div>
   );
 };
