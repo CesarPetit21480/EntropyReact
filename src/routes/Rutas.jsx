@@ -6,9 +6,10 @@ import Login from "../view/Login/Login";
 const Rutas = () => {
   return (
     <Router>
-      <Routes>      
-        <Route  path="/login" element={<Login/>} />
-        <Route  path="/" element={<Home/>} />
+      <Routes>
+        <Route path="/" element={<Home />} />        
+        <Route path="/login" element={<Login />} />
+        
       </Routes>
     </Router>
   );

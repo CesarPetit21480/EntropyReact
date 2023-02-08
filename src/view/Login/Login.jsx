@@ -1,9 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./Login.scss";
 const imgRoutes = require.context("../../assets/logo", true);
 const Login = () => {
   const lg = "./logo.png";
-  // const princi = "./principal.jpg";
+  const history = useHistory();
+  
+
+  const [values, setValues] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    console.log(values);
+   // history.push('./Home');
+
+
+  };
+
+  const handleChange = (evt) => {
+    const { target } = evt;
+    const { name, value } = target;
+
+    const newValues = {
+      ...values,
+      [name]: value,
+    };
+    setValues(newValues);
+  };
+
+  const handleChangeCheck = (evt) => {
+    const { target } = evt;
+
+    const newValues = {
+      ...values,
+      ckeckPass: target.checked,
+    };
+
+    console.log(newValues);
+    setValues(newValues);
+  };
+
   return (
     <div className="principal container-fluid">
       <div className="contenedor">
@@ -12,46 +51,49 @@ const Login = () => {
             <img className="logoTam" src={imgRoutes(`${lg}`)} alt="logo" />
             <h2 className="positionTitulo">ENTROPY</h2>
           </div>
-          {/* <div className="positionTitulo">
-            <h2>ENTROPY</h2>
-          </div> */}
 
           <div className="ubicacionForm">
-            <form>
+            <form method="post" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label className="ms-5" htmlFor="exampleInputEmail1">
+                <label className="ms-5" htmlFor="inputEmail">
                   Email address
                 </label>
                 <input
                   type="email"
                   className="form-control inpt mt-3"
-                  id="exampleInputEmail1"
+                  id="inputEmail"
+                  name="email"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
+                  value={values.email}
+                  onChange={handleChange}
                 />
               </div>
               <div className="form-group mt-3">
-                <label className="ms-5" htmlFor="exampleInputPassword1">
+                <label className="ms-5" htmlFor="inputPassword">
                   Password
                 </label>
                 <input
                   type="password"
                   className="form-control inpt mt-3"
-                  id="exampleInputPassword1"
+                  id="inputPassword"
+                  name="password"
                   placeholder="Password"
+                  value={values.password}
+                  onChange={handleChange}
                 />
               </div>
               <div className="form-check mt-3">
                 <input
                   type="checkbox"
                   className="form-check-input ms-4"
-                  id="exampleCheck1"
+                  id="inputCheck"
+                  name="ckeckPass"
+                  value={values.ckeckPass}
+                  onChange={handleChangeCheck}
                 />
                 <div className="mb-3">
-                  <label
-                    className="form-check-label ms-2"
-                    htmlFor="exampleCheck1"
-                  >
+                  <label className="form-check-label ms-2" htmlFor="inputCheck">
                     Recordar password
                   </label>
                 </div>
