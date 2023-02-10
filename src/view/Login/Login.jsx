@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { GlobalProvider } from "../../context/GlobalContext"
 import "./Login.scss";
 const imgRoutes = require.context("../../assets/logo", true);
+
 const Login = () => {
   const lg = "./logo.png";
-  const history = useHistory();
-  
+
+  const { validoLogin, userLog } = GlobalProvider();
 
   const [values, setValues] = useState({
     email: "",
@@ -14,10 +15,6 @@ const Login = () => {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log(values);
-   // history.push('./Home');
-
-
   };
 
   const handleChange = (evt) => {

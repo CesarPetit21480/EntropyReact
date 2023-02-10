@@ -1,13 +1,12 @@
-
-import './App.css';
-import Footer from './component/Footer/Footer';
-import Rutas from './routes/Rutas';
+import "./App.css";
+import Rutas from "./routes/Rutas";
+import GlobalGeneral from "./context/GlobalContext";
 
 function App() {
   return (
-   <>
-         <Rutas/>  
-   </>
+    <GlobalGeneral>
+      <Rutas />
+    </GlobalGeneral>
   );
 }
 
