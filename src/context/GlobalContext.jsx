@@ -13,7 +13,12 @@ const GlobalGeneral = ({ children }) => {
   };
 
   const validoLogin = (usuario, password) => {
-    setuserLog("hola");
+
+    console.table(usuario, password);
+    
+    setuserLog(true);
+    
+    
   };
 
   return (
