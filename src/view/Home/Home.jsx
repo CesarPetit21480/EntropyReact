@@ -1,11 +1,9 @@
-import React from "react";
-import { Navigate} from "react-router-dom";
+import React from 'react'
 
 const Home = () => {
+  return (
+    <div>Home</div>
+  )
+}
 
-  
-  const shouldRedirect = true;
-  return <>{shouldRedirect && <Navigate replace to="/login" />}</>;
-};
-
-export default Home;
+export default Home
