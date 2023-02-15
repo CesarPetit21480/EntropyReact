@@ -3,7 +3,6 @@ import { GlobalProvider } from "../../context/GlobalContext";
 import { Navigate } from "react-router-dom";
 
 const Principal = () => {const { userLog } = GlobalProvider();
-console.log('usr',userLog)
 
 
 return <>{

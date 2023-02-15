@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import { GlobalProvider } from "../../context/GlobalContext"
+import { GlobalProvider } from "../../context/GlobalContext";
 import { useNavigate } from "react-router-dom";
 import "./Login.scss";
 const imgRoutes = require.context("../../assets/logo", true);
 
-
 const Login = () => {
   const lg = "./logo.png";
-  const navigate = useNavigate();
+  const navigate  = useNavigate();
 
-  const { validoLogin } = GlobalProvider();
+  const { validoLogin} = GlobalProvider();
 
   const [values, setValues] = useState({
     email: "",
@@ -19,14 +18,12 @@ const Login = () => {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     validoLogin(values.email, values.password);   
-    navigate('/'); 
-
+    navigate("/");
   };
 
   const handleChange = (evt) => {
     const { target } = evt;
     const { name, value } = target;
-
     const newValues = {
       ...values,
       [name]: value,

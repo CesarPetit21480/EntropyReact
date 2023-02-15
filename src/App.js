@@ -5,7 +5,8 @@ import GlobalGeneral from "./context/GlobalContext";
 function App() {
   return (
     <GlobalGeneral>
-      <Rutas />
+      <Rutas/>
+  
     </GlobalGeneral>
   );
 }

@@ -14,9 +14,9 @@ const GlobalGeneral = ({ children }) => {
 
   const validoLogin = (usuario, password) => {
 
-    console.table(usuario, password);
-    
+    console.table(usuario, password);    
     setuserLog(true);
+    
     
     
   };
